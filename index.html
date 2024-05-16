@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Columns</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+    .left-column {
+        flex: 1;
+        background-color: #E9F8E5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right-column {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /*justify-content: center;*/
+    }
+    .image1{
+        height: 50%;
+        width: 50%;
+        
+    }
+    .logo1{
+        height:10%;
+        width:20%;
+    }
+    h3{
+        color:grey;
+    }
+     .custom-input {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        width: 200px;
+        background-image: url('logo.png');
+        background-size: 20px;
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        outline: none;
+    }
+    p{
+        padding-right: 150px;
+        font-size: 15px;
+    }
+    .signup-button {
+        background-color: #8A9A5B;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase;
+        outline: none;
+        width: 220px;
+        margin-top:30px;
+    }
+    .signup-button:hover {
+        background-color: #76864A;
+    }
+    h2{
+        color: grey;
+        padding-top: 30px;
+    }
+    .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        border: 2px solid grey;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .logo {
+        max-width: 60%;
+        max-height: 60%;
+    }
+    .container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        padding-bottom: 50px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="left-column">
+        <img src="./image1.png" class="image1">
+    </div>
+    <div class="right-column">
+        <img src="./logo1.png" class="logo1">
+        
+        <h3>Create Account</h3>
+        <p>Full Name</p>
+        <input type="text" class="custom-input" placeholder="Enter Full Name">
+        <p style="padding-right: 180px">Email</p>
+        <input type="text" class="custom-input" placeholder="Enter Your Email">
+        <p>Password</p>
+        <input type="text" class="custom-input" placeholder="Enter Your Password">
+        <button class="signup-button">Sign Up</button>
+        <h2>-OR-</h2>
+        <div class="container1">
+        <div class="circle">
+            <img src="google.jpg" alt="Logo 1" class="logo">
+        </div>
+        <div class="circle">
+            <img src="facebook.jpg" alt="Logo 2" class="logo">
+        </div>
+        <div class="circle">
+            <img src="apple.png" alt="Logo 3" class="logo">
+        </div>
+        </div>
+        <p style="padding-left: 150px">Already have an account?<span style="color:#8A9A5B "><b>Login<b></span>
+    </div>
+    </div>
+</div>
+</body>
+</html>
